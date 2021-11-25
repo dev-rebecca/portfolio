@@ -7,10 +7,12 @@
     <link href="tailwind.css" rel="stylesheet" />
     <title>Rebecca's Portfolio</title>
   </head>
-  <body>
+  <body class="text-gray-800 bg-gray-100">
+    
     <!-- Navbar -->
-    <nav class="grid mt-3 mr-7 justify-items-end">
-      <span class="space-x-3 text-lg">
+    <nav class="grid mt-3 text-gray-800 mr-7 justify-items-end">
+      <span class="space-x-3 text-xl">
+        <svg xmlns="http://www.w3.org/2000/svg" class="inline" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
         <a href="#about" class="uppercase">About</a>
         <a href="#projects" class="uppercase">Projects</a>
         <a href="#contact" class="uppercase">Contact</a>
@@ -22,16 +24,16 @@
 
       <!-- Header -->
       <section class="grid items-center min-h-screen">
-        <div class="mb-16 space-y-2">
-          <h1 class="text-6xl">Rebecca Mansell</h1>
-          <p class="text-4xl uppercase">Full-Stack Web Developer</p>
-          <p>I love making things happen with code and creativity.</p>
+        <div class="mb-16 space-y-4">
+          <h1 class="font-bold tracking-wide text-indigo-500 text-7xl">Rebecca Mansell</h1>
+          <p class="text-5xl tracking-wide text-indigo-400 uppercase">Full-Stack Web Developer</p>
+          <p class="text-xl tracking-wider">I love making things happen with code and creativity.</p>
         </div>
       </section>
 
       <!-- About -->
       <section class="grid content-center min-h-screen space-y-6" id="about">
-        <h2 class="text-5xl uppercase">About</h2>
+        <h2 class="text-5xl font-bold tracking-wide text-blue-400 uppercase">About</h2>
         <div class="grid grid-cols-3">
           <div class="col-span-2 space-y-4">
             <p>
@@ -57,7 +59,7 @@
             <div class="grid grid-cols-2">
               <div class="space-y-4">
                 <p>A few technologies I know well:</p>
-                <ul class="list-disc">
+                <ul class="list-disc ">
                   <li>HTML</li>
                   <li>CSS</li>
                   <li>JavaScript</li>
@@ -87,21 +89,23 @@
 
       <!-- Projects -->
       <section class="grid content-center min-h-screen space-y-6" id="projects">
-        <h2 class="text-5xl uppercase">Projects</h2>
+        <h2 class="text-5xl font-bold tracking-wide text-blue-400 uppercase">Projects</h2>
           <div class="space-y-4">
             <p>
               Here’s a showcase of the two projects I’m the most proud of. Creating
               these was inspiring and fulfilling because they had real-world
               application to them.
             </p>
-            <div class="grid grid-cols-3">
+
+            <!-- Wildlife Watcher -->
+            <div class="grid grid-cols-3 pb-20">
               <!-- Wildlife Wacther Image -->
               <div class="w-64 h-64 col-span-1 mr-6 bg-gray-200"></div>
               <!-- Wildlife Wacther text -->
               <div class="col-span-2 space-y-4">
-                <h3 class="text-2xl">Wildlife Watcher</h3>
-                <svg xmlns="http://www.w3.org/2000/svg" class="inline" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
-                <svg xmlns="http://www.w3.org/2000/svg" class="inline" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                <h3 class="text-2xl text-blue-300">Wildlife Watcher</h3>
+                <svg xmlns="http://www.w3.org/2000/svg" class="inline text-blue-400" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="inline text-blue-400" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
                 <p>
                   A labour of love, I made this app to fulfill a wish I had to keep
                   track of the wildlife in my local area.
@@ -130,47 +134,63 @@
                 </div>
               </div>
           </div>
-          
-          <!-- <h3>PHEM</h3>
-          <p>(Paul Humphries Electromechagnomics)</p>
-          <p>
-            This was created based on a competition we had at TAFE to create a
-            website for Paul, a client in need of a Wordpress site for his ___
-            business.
-          </p>
-          <p>
-            We pitched our creations to Paul, and thankfully he chose my site as
-            the one he wanted to use moving forward. I now look after Paul’s
-            site.. and something.
-          </p>
-          <ul class="list-disc">
-            <li>Wordpress</li>
-            <li>Customised PHP theme</li>
-            <li>Extensions</li>
-          </ul> -->
+
+          <!-- PHEM -->
+          <div class="grid grid-cols-3">
+            <!-- PHEM text -->
+            <div class="col-span-2 space-y-4">
+              <h3 class="text-2xl text-blue-300">PHEM</h3>
+              <svg xmlns="http://www.w3.org/2000/svg" class="inline text-blue-400" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" class="inline text-blue-400" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              <p>
+                This was created based on a competition we had at TAFE to create a
+                website for Paul, a client in need of a Wordpress site for his ___
+                business.
+              </p>
+              <p>
+                We pitched our creations to Paul, and thankfully he chose my site as
+                the one he wanted to use moving forward. I now look after Paul’s
+                site.. and something.
+              </p>
+                <ul class="list-disc">
+                  <li>Wordpress</li>
+                  <li>Customised PHP theme</li>
+                  <li>Extensions</li>
+                </ul>
+            </div>
+            <!-- PHEM Image -->
+            <div class="w-64 h-64 col-span-1 ml-6 bg-gray-200"></div>
+          </div>
         </div>
       </section>
 
       <!-- Coming soon -->
-      <section class="min-h-screen">
+      <!-- <section class="min-h-screen mt-20">
         <h2 class="text-5xl uppercase">Coming Soon...</h2>
         <p>I’m currently working on these projects:</p>
         <ul class="list-disc">
           <li>A React, NodeJS & Typescript project ??</li>
           <li>Wordpress Shopify website for an animal welfare organisation</li>
         </ul>
-      </section>
+      </section> -->
 
       <!-- Contact -->
-      <section class="min-h-screen" id="contact">
-        <h2 class="text-5xl uppercase">Contact</h2>
-        <p>
-          If you’re seeing this you’ve probably received my CV with my full
-          details. I’d love the opportunity to meet you for an interview and
-          demonstrate my dedication first-hand.
-        </p>
-        <button>rebeccakatemansell@gmail.com</button>
-        <button>See my git profile</button>
+      <section class="grid content-center min-h-screen space-y-6 mx-36" id="contact">
+        <h2 class="grid text-5xl font-bold tracking-wide text-blue-400 uppercase justify-self-center">Contact</h2>
+        <div class="grid grid-cols-2 justify-items-center">
+          <div class="bg-gray-200 rounded-full justify-self-start w-80 h-80"></div>
+          <div class="grid items-center space-y-2">
+            <p class="text-center">
+              If you’re seeing this you’ve probably received my CV with my full
+              details. I’d love the opportunity to meet you for an interview and
+              demonstrate my dedication first-hand.
+            </p>
+            <div class="grid self-start justify-self-center">
+              <button>Say hello</button>
+              <button>See my git</button>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
   </body>
