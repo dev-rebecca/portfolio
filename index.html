@@ -1,46 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="tailwind.css" rel="stylesheet">
-  <title>Rebecca's Portfolio</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="tailwind.css" rel="stylesheet" />
+    <title>Rebecca's Portfolio</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="grid mt-3 mr-7 justify-items-end">
+      <span class="space-x-3 text-lg">
+        <a href="#about" class="uppercase">About</a>
+        <a href="#projects" class="uppercase">Projects</a>
+        <a href="#contact" class="uppercase">Contact</a>
+      </span>
+    </nav>
 
-  <!-- Navbar -->
-  <nav class="grid mt-3 mr-7 justify-items-end">
-    <span class="space-x-3 text-lg">
-      <a href="#about" class="uppercase">About</a>
-      <a href="#projects" class="uppercase">Projects</a>
-      <a href="#contact" class="uppercase">Contact</a>
-    </span>
-  </nav>
+    <!-- Pages -->
+    <main class="mx-16">
+      <!-- Header -->
+      <section class="grid items-center min-h-screen">
+        <div class="mb-16 space-y-2">
+          <h1 class="text-6xl">Rebecca Mansell</h1>
+          <p class="text-4xl uppercase">Full-Stack Web Developer</p>
+          <p>I love making things happen with code and creativity.</p>
+        </div>
+      </section>
 
-  <!-- Pages -->
-  <main class="mx-16">
+      <!-- About -->
+      <section class="grid content-center min-h-screen space-y-6" id="about">
+        <h2 class="text-5xl uppercase">About</h2>
+        <div class="grid grid-cols-2">
+          <p>
+            After working in a couple of different industries, I finally bit the
+            bullet in January 2021 and decided to go after my passion of website
+            development, all guns blazing.
+          </p>
+          <p>
+            Fast forward to not even a year later – I’ve learned SO much and
+            somehow my interest in learning the tools of the trade has grown
+            even stronger. I’m hungry to create solutions for people with code.
+          </p>
+          <p>
+            I see full-stack web development as the best of both worlds… art VS
+            science. Applying technical knowledge with out-of-the-box thinking
+            and creativity.
+          </p>
+          <p>
+            My dream now is to find my forever home: a forward-thinking &
+            culture driven Brisbane-based company that allows me to hone my
+            skills and become the best version of myself every day.
+          </p>
+          <p>A few technologies I know well:</p>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>PHP</li>
+            <li>MySQL</li>
+            <li>Tailwind CSS</li>
+          </ul>
+          <p>
+            Some technologies I’m currently working on improving my knowledge
+            of:
+          </p>
+          <ul>
+            <li>React</li>
+            <li>Node.js</li>
+            <li>Typescript</li>
+          </ul>
+          <div
+            class="bg-gray-200 rounded-full w-72 h-72 justify-self-center"
+          ></div>
+        </div>
+      </section>
 
-    <!-- Header -->
-    <section class="grid items-center min-h-screen">
-      <div class="mb-16 space-y-2">
-        <h1 class="text-6xl">Rebecca Mansell</h1>
-        <p class="text-4xl uppercase">Full-Stack Web Developer in the Making</p>
-      </div>
-    </section>
-    
-    <!-- About -->
-    <section class="grid content-center min-h-screen space-y-6" id="about">
-      <h2 class="text-5xl uppercase">About</h2>
-      <div class="grid grid-cols-2">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum neque illo obcaecati quidem itaque eveniet, quam possimus numquam tempora ratione labore nulla quos nisi soluta tempore minus error fuga ducimus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel architecto magni a maxime eaque, perspiciatis mollitia corporis, ex officiis eius labore at? Eaque esse libero aperiam tenetur, deleniti dignissimos sint?</p>
-        <div class="bg-gray-200 rounded-full w-72 h-72 justify-self-center"></div>
-      </div>
-    </section>
+      <section class="min-h-screen" id="projects">
+        <h2 class="text-5xl uppercase">Projects</h2>
+        <p>
+          Here’s a showcase of the two projects I’m the most proud of. Creating
+          these was inspiring and fulfilling because they had real-world
+          application to them.
+        </p>
+        <h3>Wildlife Watcher</h3>
+        <p>
+          A labour of love, I made this app to fulfill a wish I had to keep
+          track of the wildlife in my local area.
+        </p>
+        <p>
+          I wanted to create the entire project with vanilla JavaScript to
+          ensure I had a depth of skill before moving onto learning front-end
+          frameworks.
+        </p>
+        <ul>
+          <li>JavaScript</li>
+          <li>REST API</li>
+          <li>Tailwind CSS</li>
+          <li>PHP</li>
+          <li>MySQL</li>
+          <li>Google Maps API</li>
+          <li>Image handling</li>
+        </ul>
+        <h3>PHEM</h3>
+        <p>(Paul Humphries Electromechagnomics)</p>
+        <p>
+          This was created based on a competition we had at TAFE to create a website for Paul, a client in need of a Wordpress site for his ___ business.
+        </p>
+        <p>
+          We pitched our creations to Paul, and thankfully he chose my site as the one he wanted to use moving forward. I now look after Paul’s site.. and something.
+        </p>
+        <ul>
+          <li>Wordpress</li>
+          <li>Customised PHP theme</li>
+          <li>Extensions</li>          
+        </ul>
+      </section>
 
-    <section class="min-h-screen" id="projects">Projects</section>
-    <section class="min-h-screen" id="contact">Contact</section>
-  </main>
+      <section class="min-h-screen">
+        <h2 class="text-5xl uppercase">Coming Soon...</h2>
+        <p>I’m currently working on these projects:</p>
+        <ul>
+          <li>
+            A React, NodeJS & Typescript project ??
+          </li>
+          <li>
+            Wordpress Shopify website for an animal welfare organisation
+          </li>
+        </ul>
+      </section>
 
-</body>
+      <section class="min-h-screen" id="contact">
+        <h2 class="text-5xl uppercase">Contact</h2>
+        <p>If you’re seeing this you’ve probably received my CV with my full details. I’d love the opportunity to meet you for an interview and demonstrate my dedication first-hand.</p>
+        <button>rebeccakatemansell@gmail.com</button>
+        <button>See my git profile</button>
+      </section>
+    </main>
+  </body>
 </html>
